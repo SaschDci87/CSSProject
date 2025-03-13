@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  .ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+    box-shadow: #76deef 0 0 50px;
+    animation: licht ease-in-out infinite ;
+    animation-direction: alternate;
+    animation-duration: 2s;
+
+  }
+  
+  .ball:before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 10%, #ffffff, rgba(255, 255, 255, 0) 50%);
+    filter: blur(5px);
+    z-index: 2;
+    animation: licht  infinite ;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: .5s;
+  
+    
+  }
+
+  .stage {
+    width: 300px;
+    height: 300px;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+    
+  }
+  body {
+    width: 300px;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
+    background-repeat: no-repeat;
+  }
+
+  @keyframes licht{
+    0.5%{background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    1%{background: radial-gradient(circle at 50% 119%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    2%{background: radial-gradient(circle at 50% 118%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    3%{background: radial-gradient(circle at 50% 117%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    4%{background: radial-gradient(circle at 50% 116%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    5%{background: radial-gradient(circle at 50% 115%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    6%{background: radial-gradient(circle at 50% 114%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    7%{background: radial-gradient(circle at 50% 113%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    8%{background: radial-gradient(circle at 50% 112%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    9%{background: radial-gradient(circle at 50% 111%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    10%{background: radial-gradient(circle at 50% 110%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    11%{background: radial-gradient(circle at 50% 109%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    12%{background: radial-gradient(circle at 50% 108%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    13%{background: radial-gradient(circle at 50% 107%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    14%{background: radial-gradient(circle at 50% 106%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    15%{background: radial-gradient(circle at 50% 105%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    16%{background: radial-gradient(circle at 50% 104%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    17%{background: radial-gradient(circle at 50% 103%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    18%{background: radial-gradient(circle at 50% 102%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    19%{background: radial-gradient(circle at 50% 101%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    20%{background: radial-gradient(circle at 50% 100%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    21%{background: radial-gradient(circle at 50% 99%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    22%{background: radial-gradient(circle at 50% 98%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    23%{background: radial-gradient(circle at 50% 97%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    24%{background: radial-gradient(circle at 50% 96%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    25%{background: radial-gradient(circle at 50% 95%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    26%{background: radial-gradient(circle at 50% 94%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    27%{background: radial-gradient(circle at 50% 93%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    28%{background: radial-gradient(circle at 50% 92%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    29%{background: radial-gradient(circle at 50% 91%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    30%{background: radial-gradient(circle at 50% 90%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    31%{background: radial-gradient(circle at 50% 89%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    32%{background: radial-gradient(circle at 50% 88%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    33%{background: radial-gradient(circle at 50% 87%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    34%{background: radial-gradient(circle at 50% 86%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    35%{background: radial-gradient(circle at 50% 85%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    36%{background: radial-gradient(circle at 50% 84%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    37%{background: radial-gradient(circle at 50% 83%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    38%{background: radial-gradient(circle at 50% 82%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    39%{background: radial-gradient(circle at 50% 81%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    40%{background: radial-gradient(circle at 50% 80%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    41%{background: radial-gradient(circle at 50% 79%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    42%{background: radial-gradient(circle at 50% 78%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    43%{background: radial-gradient(circle at 50% 77%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    44%{background: radial-gradient(circle at 50% 76%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    45%{background: radial-gradient(circle at 50% 75%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    46%{background: radial-gradient(circle at 50% 74%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    47%{background: radial-gradient(circle at 50% 73%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    48%{background: radial-gradient(circle at 50% 72%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    49%{background: radial-gradient(circle at 50% 71%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    50%{background: radial-gradient(circle at 50% 70%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    51%{background: radial-gradient(circle at 50% 69%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    52%{background: radial-gradient(circle at 50% 68%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    53%{background: radial-gradient(circle at 50% 67%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    54%{background: radial-gradient(circle at 50% 66%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    55%{background: radial-gradient(circle at 50% 65%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    56%{background: radial-gradient(circle at 50% 64%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    57%{background: radial-gradient(circle at 50% 63%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    58%{background: radial-gradient(circle at 50% 62%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    59%{background: radial-gradient(circle at 50% 61%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    60%{background: radial-gradient(circle at 50% 60%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    61%{background: radial-gradient(circle at 50% 59%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    62%{background: radial-gradient(circle at 50% 58%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    63%{background: radial-gradient(circle at 50% 57%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    64%{background: radial-gradient(circle at 50% 56%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    65%{background: radial-gradient(circle at 50% 55%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    66%{background: radial-gradient(circle at 50% 54%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    67%{background: radial-gradient(circle at 50% 53%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    68%{background: radial-gradient(circle at 50% 52%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    69%{background: radial-gradient(circle at 50% 51%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    70%{background: radial-gradient(circle at 50% 50%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    71%{background: radial-gradient(circle at 50% 49%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    72%{background: radial-gradient(circle at 50% 48%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    73%{background: radial-gradient(circle at 50% 47%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    74%{background: radial-gradient(circle at 50% 46%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    75%{background: radial-gradient(circle at 50% 45%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    76%{background: radial-gradient(circle at 50% 44%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    77%{background: radial-gradient(circle at 50% 43%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    78%{background: radial-gradient(circle at 50% 42%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    79%{background: radial-gradient(circle at 50% 41%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    80%{background: radial-gradient(circle at 50% 40%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    81%{background: radial-gradient(circle at 50% 39%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    82%{background: radial-gradient(circle at 50% 38%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    83%{background: radial-gradient(circle at 50% 37%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    84%{background: radial-gradient(circle at 50% 36%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    85%{background: radial-gradient(circle at 50% 35%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    86%{background: radial-gradient(circle at 50% 34%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    87%{background: radial-gradient(circle at 50% 33%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    88%{background: radial-gradient(circle at 50% 32%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    89%{background: radial-gradient(circle at 50% 31%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    90%{background: radial-gradient(circle at 50% 30%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    91%{background: radial-gradient(circle at 50% 29% , #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    92%{background: radial-gradient(circle at 50% 28% , #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    93%{background: radial-gradient(circle at 50% 27% , #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    94%{background: radial-gradient(circle at 50% 26%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    95%{background: radial-gradient(circle at 50% 25%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    96%{background: radial-gradient(circle at 50% 24%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    97%{background: radial-gradient(circle at 50% 23%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    98%{background: radial-gradient(circle at 50% 22%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    99%{background: radial-gradient(circle at 50% 21%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    100%{background: radial-gradient(circle at 50% 20%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);}
+    
+  }
+
+  /* @keyframes licht2{
+1%{background: radial-gradient(circle at 50% 119%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+2%{background: radial-gradient(circle at 50% 118%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+3%{background: radial-gradient(circle at 50% 117%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+4%{background: radial-gradient(circle at 50% 116%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+5%{background: radial-gradient(circle at 50% 115%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+6%{background: radial-gradient(circle at 50% 114%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+7%{background: radial-gradient(circle at 50% 113%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+8%{background: radial-gradient(circle at 50% 112%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+9%{background: radial-gradient(circle at 50% 111%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+10%{background: radial-gradient(circle at 50% 110%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+11%{background: radial-gradient(circle at 50% 109%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+12%{background: radial-gradient(circle at 50% 108%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+13%{background: radial-gradient(circle at 50% 107%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+14%{background: radial-gradient(circle at 50% 106%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+15%{background: radial-gradient(circle at 50% 105%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+16%{background: radial-gradient(circle at 50% 104%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+17%{background: radial-gradient(circle at 50% 103%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+18%{background: radial-gradient(circle at 50% 102%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+19%{background: radial-gradient(circle at 50% 101%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+20%{background: radial-gradient(circle at 50% 100%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+21%{background: radial-gradient(circle at 50% 99%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+22%{background: radial-gradient(circle at 50% 98%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+23%{background: radial-gradient(circle at 50% 97, #ffffff, rgba(255, 255, 255, 0) 50%)};
+24%{background: radial-gradient(circle at 50% 96%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+25%{background: radial-gradient(circle at 50% 95%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+26%{background: radial-gradient(circle at 50% 94%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+27%{background: radial-gradient(circle at 50% 93%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+28%{background: radial-gradient(circle at 50% 92%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+29%{background: radial-gradient(circle at 50% 91%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+30%{background: radial-gradient(circle at 50% 90%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+31%{background: radial-gradient(circle at 50% 89%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+32%{background: radial-gradient(circle at 50% 88%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+33%{background: radial-gradient(circle at 50% 87%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+34%{background: radial-gradient(circle at 50% 86%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+35%{background: radial-gradient(circle at 50% 85%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+36%{background: radial-gradient(circle at 50% 84%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+37%{background: radial-gradient(circle at 50% 83%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+38%{background: radial-gradient(circle at 50% 82%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+39%{background: radial-gradient(circle at 50% 81%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+40%{background: radial-gradient(circle at 50% 80%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+41%{background: radial-gradient(circle at 50% 79%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+42%{background: radial-gradient(circle at 50% 78%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+43%{background: radial-gradient(circle at 50% 77%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+100%{background: radial-gradient(circle at 50% 76%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+45%{background: radial-gradient(circle at 50% 75%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+46%{background: radial-gradient(circle at 50% 74%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+47%{background: radial-gradient(circle at 50% 73%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+48%{background: radial-gradient(circle at 50% 72%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+49%{background: radial-gradient(circle at 50% 71%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+50%{background: radial-gradient(circle at 50% 70%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+51%{background: radial-gradient(circle at 50% 69%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+52%{background: radial-gradient(circle at 50% 68%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+53%{background: radial-gradient(circle at 50% 67%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+54%{background: radial-gradient(circle at 50% 66%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+55%{background: radial-gradient(circle at 50% 65%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+56%{background: radial-gradient(circle at 50% 64%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+57%{background: radial-gradient(circle at 50% 63%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+58%{background: radial-gradient(circle at 50% 62%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+59%{background: radial-gradient(circle at 50% 61%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+60%{background: radial-gradient(circle at 50% 60%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+61%{background: radial-gradient(circle at 50% 59%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+62%{background: radial-gradient(circle at 50% 58%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+63%{background: radial-gradient(circle at 50% 57%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+64%{background: radial-gradient(circle at 50% 56%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+65%{background: radial-gradient(circle at 50% 55%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+66%{background: radial-gradient(circle at 50% 54%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+67%{background: radial-gradient(circle at 50% 53%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+68%{background: radial-gradient(circle at 50% 52%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+69%{background: radial-gradient(circle at 50% 51%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+70%{background: radial-gradient(circle at 50% 50%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+71%{background: radial-gradient(circle at 50% 49%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+72%{background: radial-gradient(circle at 50% 48%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+73%{background: radial-gradient(circle at 50% 47%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+74%{background: radial-gradient(circle at 50% 46%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+75%{background: radial-gradient(circle at 50% 45%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+76%{background: radial-gradient(circle at 50% 44%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+77%{background: radial-gradient(circle at 50% 43%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+78%{background: radial-gradient(circle at 50% 42%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+79%{background: radial-gradient(circle at 50% 41%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+80%{background: radial-gradient(circle at 50% 40%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+81%{background: radial-gradient(circle at 50% 39%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+82%{background: radial-gradient(circle at 50% 38%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+83%{background: radial-gradient(circle at 50% 37%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+84%{background: radial-gradient(circle at 50% 36%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+85%{background: radial-gradient(circle at 50% 35%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+86%{background: radial-gradient(circle at 50% 34%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+87%{background: radial-gradient(circle at 50% 33%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+88%{background: radial-gradient(circle at 50% 32%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+89%{background: radial-gradient(circle at 50% 31%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+90%{background: radial-gradient(circle at 50% 30%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+91%{background: radial-gradient(circle at 50% 29%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+92%{background: radial-gradient(circle at 50% 28%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+93%{background: radial-gradient(circle at 50% 27%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+94%{background: radial-gradient(circle at 50% 26%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+95%{background: radial-gradient(circle at 50% 25%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+96%{background: radial-gradient(circle at 50% 24%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+97%{background: radial-gradient(circle at 50% 23%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+98%{background: radial-gradient(circle at 50% 22%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+99%{background: radial-gradient(circle at 50% 21%, #ffffff, rgba(255, 255, 255, 0) 50%)};
+100%{background: radial-gradient(circle at 50% 20%, #ffffff, rgba(255, 255, 255, 0) 50%)};} */
