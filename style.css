@@ -38,7 +38,7 @@ section{
     border-radius: 50%;
     position: relative;
     background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
-    animation: lighting 1s forwards;
+ 
 
 }
 .stage:before{
@@ -101,9 +101,9 @@ h1{
 }
 h1 span{
     color: darkblue;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-name: lighting;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in ;
     animation-iteration-count: infinite;
 
 }
