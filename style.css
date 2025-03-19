@@ -12,23 +12,11 @@ header{
 }  
 
 .card img{
-    width: 40%;
-    height: 40%;
+
     border-radius: 25%;
 }
 
-section{
-    display: flex;
-}
 .stage{
-    /* border-radius: 50%;
-    width: 550px;
-    background: black;
-    border-radius: 50%;
-    height: 200px;
-    width: 550px;
-    margin: 0;
-    background: radial-gradient(circle at 100px 100px, #5cabff, #000); */
 
     display: inline-block;
     width: 550px;
@@ -61,8 +49,7 @@ section{
         z-index: -1;
         }
 body{
- 
-    background-color:  #062745;
+   background: radial-gradient(circle, #3a8de1, #1b3b73);
 }
 svg{
     height: 25px;
@@ -79,9 +66,13 @@ footer p{
 }
 
 main{
-    margin-top: 475px;
+    margin-top: 390px;
     display: flex;
     justify-content: center;
+}
+.layout{
+    margin-left: 50px;
+    text-align: center;
 }
 
 .rock-salt-regular {
@@ -102,13 +93,16 @@ section{
 h1{
     position: absolute;
     top: 50px;
+    transition: 4s;
+    
 }
 h1 span{
-    color: darkblue;
-    animation-duration: 2s;
-    animation-name: lighting;
+    color: black;
+    animation-duration: 2.5s;
+    animation-name: schrift;
     animation-timing-function: ease-in ;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
+    
 
 }
  h1 span:nth-child(1) { animation-delay: 0.5s; }
@@ -123,23 +117,26 @@ h1 span{
  h1 span:nth-child(10) { animation-delay: 1.4s; }
  h1 span:nth-child(11) { animation-delay: 1.5s; }
 
-@keyframes lighting{
+@keyframes schrift{
     0% {
         
-        color: #5cabff ;
-        text-shadow: 0 0 50px orangered, -15px -15px 50px orangered, -15px 15px 50px orangered,
-        15px -15px 50px blue;
+        /* color: #5cabff ;
+        text-shadow: 0 0 50px orangered, -15px -15px 50px yellow, -15px 15px 50px orange,
+        15px -15px 50px blue; */
+
+        color:  #1b3b73; /* Textfarbe bleibt gleich, helles Blau */
+        text-shadow: 0 0 50px cyan, 0 0 50px lightblue, -15px -15px 40px white, 15px 15px 40px deepskyblue;
       } 
     10%{
        
-       
+        
         text-shadow: none;
     }
       
 
     100% {
         
-       
+        
         text-shadow: none;
       }
 } 
