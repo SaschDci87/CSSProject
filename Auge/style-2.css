@@ -64,7 +64,6 @@
       .iris:after {
         content: "";
         display: block;
-        position: absolute;
         width: 31.25%;
         height: 31.25%;
         border-radius: 100%;
@@ -87,19 +86,29 @@
         height: 25px;
       }
       @keyframes augen {
-                0% {
-                  transform: none;
-                }
-                20% {
+                10% {
                   transform: translateX(-68px) translateY(30px) skewX(15deg) skewY(-10deg) scale(0.95);
                 }
-                25%, 44% {
+                25% {
                   transform: none;
                 }
-                50%, 60% {
+                30%{
+                  scale: 1.4;
+                }
+                40%{
+                  scale: 1.4;
+                }
+                50%{
+                  scale: 1.4;
+                }
+                60%{
+                  scale:1;
+                }
+                
+                75% {
                   transform: translateX(68px) translateY(-40px) skewX(5deg) skewY(2deg) scaleX(0.95);
                 }
-                66%, 100% {
+                100% {
                   transform: none;
                 }
               }
